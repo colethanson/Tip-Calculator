@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  
+  <div class="calculator">
+    <h1>Tip Calculator</h1>
+    <form action="">
+
+      <div class="input-info">
+
+        <select name="currency" id="currency">
+          <option value="USD">$</option>
+          <option value="Euro">&euro;</option>
+          <option value="Yen">&#165;</option>
+          <option value="Pound">&#163;</option>
+        </select>
+
+        <input type="text" id="bill" placeholder="Bill Amount"><br>
+      </div>
+
+      <h3>Tip %</h3>
+
+      <!-- <div class="buttons">
+        <button class="quickBtn" value="0.15" id="15Btn" type="button">15%</button>
+        <button class="quickBtn" value="0.2" id="20Btn" type="button">20%</button>
+        <button class="quickBtn" value="0.25" id="25Btn" type="button">25%</button><br>
+      </div> -->
+
+      <div class="range-slider-container">
+        <input type="range" id="percent" name="percent" min="0" max="100"><br>
+          <div class="percentage">
+            <span>50%</span>
+          </div>
+        </div>
+
+      <button type="button" id="calculate">Calculate</button><br>
+      
+      <span>Tip:</span>
+      <input type="text" id="tip" placeholder="Tip Total" disabled><br>
+
+      <span>Total:</span>
+      <input type="text" id="total" placeholder="Total With Tip Included" disabled>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
